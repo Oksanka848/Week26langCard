@@ -6,9 +6,9 @@ export default function Header() {
     <>
     <div className='logo'></div>
     <nav>
-      <a href='#'>link</a>
-      <a href='#'>link</a>
-      <a href='#'>link</a>
+      <a href='/#'>link</a>
+      <a href='/#'>link</a>
+      <a href='/#'>link</a>
       </nav>
       <Contacts />
     </>

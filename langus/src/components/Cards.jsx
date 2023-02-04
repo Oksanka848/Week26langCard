@@ -1,8 +1,8 @@
 
-import React from 'react'
-
+import React from 'react';
+import Words from './words';
 export default function Cards() {
   return (
-    <div>Cards</div>
+    <><Words/></>
   )
 }

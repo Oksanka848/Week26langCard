@@ -1,7 +1,7 @@
 import React from 'react';
 import Contacts from './Contacts';
 
-export default function () {
+export default function Footer() {
   return (
     <>
     <Contacts/>

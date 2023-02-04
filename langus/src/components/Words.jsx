@@ -1,10 +1,13 @@
-import React from 'react';
-
 import words from './words.json';
 
-export default function words() {
+export default function Words() {
   return (
-    <div>words</div>
+    <>{
+      words.map((word) =>
+        <Words key={word.id} en={word.en} ru={word.ru} tr={word.tr}>
+        </Words>
+      )
+    }</>
   )
 }
 
