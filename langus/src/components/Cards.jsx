@@ -1,10 +1,11 @@
 
 import React from 'react';
-import Words from './words';
+import Words from './Words';
+
 export default function Cards() {
   return (
     <>
-    <div className={style.card}>
+    <div className='card'>
     <Words/>
     </div>
     </>

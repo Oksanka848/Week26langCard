@@ -1,4 +1,4 @@
-import words from './words.json';
+import words from './diction.json';
 
 export default function Words() {
   return (
