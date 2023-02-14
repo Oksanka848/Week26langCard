@@ -365,7 +365,7 @@ module.exports = function (webpackEnv) {
             },
           ],
         },
-            {
+                    {
               test: [/\.avif$/],
               type: 'asset',
               mimetype: 'image/avif',

@@ -1,18 +1,14 @@
 import React from 'react'
-import Words from '../Words';
-
-import style from './wordlist.module.scss';
+import words from './diction.json';
+import Words from '../Words/Words';
 
 export default function WordList() {
   return (
-    <div className={style.container}>
-    <ul className={style.list_container}>
-        <li className={style.en}> Слово</li>
-        <li className={style.ru}>Перевод</li>
-        <li className={style.tr}>Транскрипция</li>
-        
-    </ul >
-<Words/>
-</div>
-)
+    <>{
+      words.map((word) =>
+        <Words key={word.id} en={word.en} ru={word.ru} tr={word.tr}>
+        </Words>
+      )
+    }</>
+  )
 }

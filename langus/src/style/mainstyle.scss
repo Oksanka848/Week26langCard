@@ -1,10 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-/*Variables*/
+/* colors */
+$primary-background-color: rgb(255, 255, 255);
+$secondary-background-color: rgb(240, 241, 244);
+$tertiary-background-color: rgb(248, 248, 248);
+$dark-purple-color: rgb(99, 52, 186);
+$normal-purple-color: rgb(179, 161, 222);
+$light-purple-color: rgb(245, 242, 253);
+$dark-orange-color: rgb(237, 94, 49);
+$normal-orange-color: rgb(243, 158, 107);
+$light-orange-color: rgb(251, 235, 228);
+$red-color: rgb(242, 108, 105);
+/* fonts */
+$font-family: "Poppins", sans-serif;
+$font-size-xsm: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-md: 1.8rem;
+$font-size-lg: 2.8rem;
+$font-size-xl: 4rem;
+$gap: 2rem;
+/* margins */
+$margin-sm: 2rem;
+$margin-md: 3rem;
+$margin-xsm: 1.2rem;
+/* paddings */
+$padding-lg: 4rem;
+$padding-md: 3rem;
+$padding-sm: 2rem;
+$padding-xsm: 1rem;
+:root {
+  $primary-background-color: #{$primary-background-color};
+  $secondary-background-color: #{$secondary-background-color};
+  $tertiary-background-color: #{$tertiary-background-color};
+  $dark-purple-color: #{$dark-purple-color};
+  $normal-purple-color: #{$normal-purple-color};
+  $light-purple-color: #{$light-purple-color};
+  $dark-orange-color: #{$dark-orange-color};
+  $normal-orange-color: #{$normal-orange-color};
+  $light-orange-color: #{$light-orange-color};
+  $red-color: #{$red-color};
+  /* fonts */
+  $font-family: "Poppins", sans-serif;
+  $font-size-xsm: #{$font-size-xsm};
+  $font-size-sm: #{$font-size-sm};
+  $font-size-md: #{$font-size-md};
+  $font-size-lg: #{$font-size-lg};
+  $font-size-xl: #{$font-size-xl};
+  $gap: #{$gap};
+  /* margins */
+  $margin-sm: #{$margin-sm};
+  $margin-md: #{$margin-md};
+  $margin-xsm: #{$margin-xsm};
+  /* paddings */
+  $padding-lg: #{$padding-lg};
+  $padding-md: #{$padding-md};
+  $padding-sm: #{$padding-sm};
+  $padding-xsm: #{$padding-xsm};
+}
+
+
+  
+
 
 $bg-color:rgb(253, 252, 252);
-$bg-gradient: linear-gradient(#eff7f9, #ace0f9);
-$main-fontcolor: #00072d;
-$main-font: "Poppins", sans-serif;
+$primary-background-color:$primary-background-color;
+$bg-gradient: linear-gradient(rgb(239, 247, 249), rgb(172, 224, 249));
+$main-fontcolor: rgb(0, 7, 45);
+$main-font: $font-family;
 *{cursor: pointer;}
 
 @mixin main-text ($font-size, $font-weight: 400) {
@@ -24,7 +85,7 @@ $main-font: "Poppins", sans-serif;
   margin: 0.85em;
   border-radius: 1em;
   border: none;
-  background-color: #ace0f9;
+  background-color: rgb(172, 224, 249);
   text-align: center;
   font-size: 1em;
   font-family: $main-font;
@@ -40,7 +101,7 @@ $main-font: "Poppins", sans-serif;
   }
 }
 
-@mixin btn_group{
+@mixin btn-group{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,12 +112,12 @@ $main-font: "Poppins", sans-serif;
   margin: 0.8em 0;
   height: 40px;
   padding-left: 1em;
-  border: solid 2px red;
+  border: solid 2px rgb(255, 0, 0);
   border-radius: 1em;
   background-color: rgb(245, 245, 245);
 
   &:focus {
-      border: 2px solid #713bc1;
+      border: 2px solid rgb(113, 59, 193);
       outline: none;
   }
 
@@ -65,14 +126,124 @@ $main-font: "Poppins", sans-serif;
   }
 }
 
-@mixin word_container{
+@mixin word-container{
   display: grid;
   grid-template-columns: repeat(4, 15%) 30%;
   justify-content: center;
   padding: 0;
   column-gap: 0.5em;
-  font-family: $main-font;
+  font-family: $font-family;
   font-size: 1.1em;
   color: $main-fontcolor;
   text-align: center;
 }
+body {
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: $font-size-xl;
+  color: rgb(51, 51, 51);
+}
+
+h2 {
+  font-size: $font-size-lg;
+  color: rgb(68, 68, 68);
+}
+
+h3 {
+  font-size: $font-size-md;
+  color: rgb(68, 68, 68);
+}
+
+h4 {
+  font-size: $font-size-sm;
+  color: rgb(51, 51, 51);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+i {
+  font-size: $font-size-md;
+}
+
+/* Reusable classes */
+
+.place-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dgrid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.margin-b {
+  margin-bottom: $margin-md;
+}
+
+.card-1 {
+  padding: $padding-sm;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.card2 {
+  padding: $padding-md;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.card-1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.s-item-4:hover {
+  background-color: $normal-orange-color;
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  position: absolute;
+  top: 4rem;
+  color: $dark-purple-color;
+}
+
+.ri-english-input {
+  font-size: $font-size-lg;
+  font-weight: 700;
+}
+
+/* container */
+
+/*.container {
+  grid-template-columns: 3fr 2.4fr;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  padding: $padding-lg;
+}
+*/

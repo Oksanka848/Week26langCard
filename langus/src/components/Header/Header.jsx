@@ -1,12 +1,12 @@
 import React from 'react';
 import Contacts from '../Contacts/Contacts';
-import style from './style.module.scss';
+
 
 
 export default function Header() {
   return (
     <>
-    <div className={style.header}>
+    <div className='header'>
     <nav>
       <a href='/#'>Main</a>
       <a href='/#'>Words</a>
