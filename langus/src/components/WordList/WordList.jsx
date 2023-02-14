@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Words from '../Words';
 
 import style from './wordlist.module.scss';

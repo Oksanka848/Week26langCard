@@ -6,6 +6,34 @@ $bg-gradient: linear-gradient(#eff7f9, #ace0f9);
 $main-fontcolor: #00072d;
 $main-font: "Poppins", sans-serif;
 *{cursor: pointer;}
+$primary-background-color: #ffffff;
+$secondary-background-color: #f0f1f4;
+$tertiary-background-color: #f8f8f8;
+$dark-purple-color: #6334ba;
+ $normal-purple-color: #b3a1de;
+ $light-purple-color: #f5f2fd;
+ $dark-orange-color: #ed5e31;
+ $normal-orange-color: #f39e6b;
+ $light-orange-color: #fbebe4;
+ $red-color: #f26c69;
+ /* fonts */
+ $font-family: "Poppins", sans-serif;
+ $font-size-xsm: 1.2rem;
+ $font-size-sm: 1.4rem;
+ $font-size-md: 1.8rem;
+ $font-size-lg: 2.8rem;
+ $font-size-xl: 4rem;
+ $gap: 2rem;
+ /* margins */
+ $margin-sm: 2rem;
+ $margin-md: 3rem;
+ $margin-xsm: 1.2rem;
+ /* paddings */
+ $padding-lg: 4rem;
+ $padding-md: 3rem;
+ $padding-sm: 2rem;
+ $padding-xsm: 1rem;
+
 
 @mixin main-text ($font-size, $font-weight: 400) {
   font-family: $main-font;
@@ -15,64 +43,3 @@ $main-font: "Poppins", sans-serif;
   line-height: 150%;
 }
 
-@mixin btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 40px;
-  margin: 0.85em;
-  border-radius: 1em;
-  border: none;
-  background-color: #ace0f9;
-  text-align: center;
-  font-size: 1em;
-  font-family: $main-font;
-  color: $main-fontcolor;
-  cursor: pointer;
-
-  &:hover {
-      background-color: rgb(200, 140, 240);
-  }
-
-  &:active {
-      background-color: rgb(140, 150, 240);
-  }
-}
-
-@mixin btn_group{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5em;
-}
-
-@mixin input{
-  margin: 0.8em 0;
-  height: 40px;
-  padding-left: 1em;
-  border: solid 2px red;
-  border-radius: 1em;
-  background-color: rgb(245, 245, 245);
-
-  &:focus {
-      border: 2px solid #713bc1;
-      outline: none;
-  }
-
-  &:hover {
-      background-color: rgb(210, 208, 208);
-  }
-}
-
-@mixin word_container{
-  display: grid;
-  grid-template-columns: repeat(4, 15%) 30%;
-  justify-content: center;
-  padding: 0;
-  column-gap: 0.5em;
-  font-family: $main-font;
-  font-size: 1.1em;
-  color: $main-fontcolor;
-  text-align: center;
-}

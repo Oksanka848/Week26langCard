@@ -365,6 +365,19 @@ module.exports = function (webpackEnv) {
             },
           ],
         },
+        {
+          test: [/\.s[ac]ss$/i],
+          exclude: /node_modules/,
+          use: ['style-loader',
+          "css-loader",
+        {
+          loader: "sass-loader",
+          options: {
+            modules: true,
+          },
+        },
+      ],
+    },
             {
               test: [/\.avif$/],
               type: 'asset',
