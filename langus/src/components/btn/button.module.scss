@@ -2,17 +2,18 @@
 $buttonS: hsl(186 100% 69%);
 
 .buttonS {
-  position: relative;
+  flex-direction: 1 0 0;
+  display: flex;
   color: $buttonS;
   cursor: pointer;
   padding: 0.35em 1em;
   border: 0.15em solid $buttonS;
   border-radius: 0.45em;
   background: none;
-  perspective: 2em;
+  perspective: 1em;
   font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 1em;
+  font-weight: 400;
   letter-spacing: 1em;
 
   box-shadow: inset 0px 0px 0.5em 0px $buttonS,
@@ -64,6 +65,7 @@ $buttonS: hsl(186 100% 69%);
 }
 
 .glowingtxt {
+  align-items: center;
   float: left;
   margin-right: -0.8em;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em $buttonS;

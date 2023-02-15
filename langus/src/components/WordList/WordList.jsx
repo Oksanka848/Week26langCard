@@ -5,15 +5,16 @@ import style from './wordlist.module.scss';
 import ButtonS from '../btn/ButtonS';
 
 export default function WordList() {
+ 
   return (
-    <>
+    
     <div className={style.container}>
             <ul className={style.listcontainer}>
                 <li className={style.item}> Слово</li>
                 <li className={style.item}>Перевод</li>
                 <li className={style.item}>Транскрипция</li>
-                <li className={style.item}><ButtonS />редактировать</li>
-                <li className={style.item}><ButtonS/>удалить</li>
+                <li className={style.item}><ButtonS  text={["редактировать"]} /></li>
+                <li className={style.item}><ButtonS text={["удалить"]} /></li>
             </ul >
             {
             words.map((word) =>
@@ -21,6 +22,6 @@ export default function WordList() {
      
            
         </div>
-    </>
+    
   )
 }
