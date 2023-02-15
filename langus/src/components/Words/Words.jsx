@@ -3,7 +3,7 @@ import React from 'react'
 
 import style from './word.module.scss';
 
-export default function WordList(props) {
+export default function words(props) {
     return (
       <>
     <div className={`${style.container}`}>
@@ -13,7 +13,7 @@ export default function WordList(props) {
         <li className={`${style.item}`}>{props.tr}</li>
         
     </ul >
-
+   
 </div>
 </>
 )

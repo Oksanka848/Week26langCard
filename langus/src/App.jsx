@@ -6,7 +6,7 @@ import '../src/components/Words/word.module.scss';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
-import WordList from './components/WordList/WordList';
+
 
 
 export default function App() {
@@ -17,8 +17,7 @@ export default function App() {
       </header>
       <main>
         <Main/>
-        <WordList/>
-      </main>
+              </main>
       <footer>
         <Footer/>
       </footer>
